@@ -1,4 +1,8 @@
 package com.example.shipstunnelsgoods.model
 
-class Ship(val good: GOOD, val weight: WEIGHT) {
+data class Ship(val id: Int, val good: GOOD, val weight: WEIGHT) {
+
+    override fun toString(): String {
+       return "№ ${id} ${good} ${weight}"
+    }
 }

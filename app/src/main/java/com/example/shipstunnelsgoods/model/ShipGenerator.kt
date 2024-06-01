@@ -1,12 +1,15 @@
 package com.example.shipstunnelsgoods.model
 
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
-class ShipGenerator(val shipsCount: Int) {
+class ShipGenerator(val shipsAmount: Int) {
+    private var id: Int = 0
 
-    val shipFlow: Flow<Ship> = flow{
-        repeat(shipsCount){
+    fun getShipFlow(): Flow<Ship> = flow{
+        repeat(shipsAmount){
+            delay(1000)
             emit(getRandomShip())
         }
     }
@@ -14,6 +17,7 @@ class ShipGenerator(val shipsCount: Int) {
     private fun getRandomShip(): Ship{
         val good = GOOD.entries.random()
         val weight = WEIGHT.entries.random()
-        return Ship(good, weight)
+        id++
+        return Ship(id, good, weight)
     }
 }
