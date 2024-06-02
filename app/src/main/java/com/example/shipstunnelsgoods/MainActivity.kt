@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             textView.text = ""
     }
 
-    private fun setTunnelViewText(tunnel: Tunnel){
+    private fun setTunnelViewText(tunnel: ShipQueue){
         val shipViews = arrayOf(binding.firstShip, binding.secondShip,binding.thirdShip, binding.fourthShip, binding.fifthShip)
 
         val shipQueue = tunnel.getShipQueue()

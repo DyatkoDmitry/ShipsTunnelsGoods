@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ShipsTunnelsGoods</string>
+    <string name="bread_dock">BREAD DOCK</string>
+    <string name="banana_dock">BANANA DOCK</string>
+    <string name="clothes_dock">CLOTHES DOCK</string>
 </resources>

@@ -16,54 +16,63 @@
         app:layout_constraintBottom_toBottomOf="@id/docks"
         app:layout_constraintStart_toStartOf="parent">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginBottom="-100dp"
-        android:background="@drawable/baseline_arrow_drop_up_24"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="-100dp"
+            android:background="@drawable/baseline_arrow_drop_up_24"/>
 
-    <LinearLayout
-        android:id="@+id/tunnel"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/grey"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/tunnel"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/grey"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/first_ship"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:gravity="center_horizontal"/>
-        <TextView
-            android:id="@+id/second_ship"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:gravity="center_horizontal"/>
-        <TextView
-            android:id="@+id/third_ship"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:gravity="center_horizontal"/>
-        <TextView
-            android:id="@+id/fourth_ship"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:gravity="center_horizontal"/>
-        <TextView
-            android:id="@+id/fifth_ship"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/first_ship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/second_ship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/third_ship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/fourth_ship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/fifth_ship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"/>
         </LinearLayout>
 
         <View
@@ -72,8 +81,6 @@
             android:layout_height="200dp"
             android:layout_marginTop="-100dp"
             android:background="@drawable/baseline_arrow_drop_down_24"/>
-
-
     </LinearLayout>
 
     <LinearLayout
@@ -99,18 +106,19 @@
                 android:layout_marginBottom="-25dp"
                 android:background="@drawable/baseline_arrow_drop_up_24"/>
 
-        <TextView
-            android:id="@+id/bread_dock"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/bread_color"
-            android:inputType="textMultiLine"
-            android:gravity="center"/>
+            <TextView
+                android:id="@+id/bread_dock"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bread_color"
+                android:inputType="textMultiLine"
+                android:gravity="center"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:gravity="center"
-                android:text="BREAD DOCK"/>
+                android:text="@string/bread_dock"/>
         </LinearLayout>
 
         <LinearLayout
@@ -130,14 +138,16 @@
                 android:id="@+id/banana_dock"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:paddingHorizontal="10dp"
                 android:background="@color/banana_color"
                 android:inputType="textMultiLine"
                 android:gravity="center"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:gravity="center"
-                android:text="BANANA DOCK"/>
+                android:text="@string/banana_dock"/>
         </LinearLayout>
 
         <LinearLayout
@@ -157,16 +167,16 @@
                 android:id="@+id/clothes_dock"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:paddingHorizontal="10dp"
                 android:background="@color/clothes_color"
                 android:inputType="textMultiLine"
                 android:gravity="center"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:gravity="center"
-                android:text="CLOTHES DOCK"/>
+                android:text="@string/clothes_dock"/>
         </LinearLayout>
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
